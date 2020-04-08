@@ -247,13 +247,13 @@ section.sessao-3{
 .autores{
     float: left;
     max-width: 600px;
-    padding-left: 30px;
+    margin-left: 30px;
     color: rgb(68, 68, 68);
+    padding-bottom: 30px;
 }
 
-.titulo-autores{
+.titulo-autores{ 
     float: left;
-    width: 100%;
 }
 
 .wraper_titulo-autores{
@@ -288,10 +288,11 @@ section.sessao-3{
 }
 
 .slider-bullets{
-    margin-top: 12px;
-    margin-left: 30px;
+    position: relative;
+    left: 30px;
     width: 300px;
-    max-width: 100%; 
+    max-width: 90%; 
+    background-color: rgb(32, 32, 32);
 }
 
 .slider-bullets span{
