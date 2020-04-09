@@ -55,4 +55,10 @@ $(function(){
             autoPlay();
         })
     }
+
+    $(".scroll-wraper").hover(function(){
+        clearInterval(intervalo);
+     }, function() {
+        autoPlay();
+     }) 
 })
