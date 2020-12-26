@@ -5,22 +5,24 @@
         <title>Five Hundred Development</title>
         <meta charset="utf-8">
         <link href="CSS/style.css" rel="stylesheet" type="text/css"/>
+        <link href="CSS/modal.css" rel="stylesheet" type="text/css"/>
         <meta name="description" content=""/>
         <meta name="keywords" content=""/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0" />
         <meta name="author" content="Bruno Lemos"/>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     </head>
 
     <body>
-
+        <div id="modal"></div>
         <header>
-            <div class="container">
+            <div class="container" id="home">
                 <div class="logo-1"></div><!--logo-1-->
 
                 <nav class="menu-desktop">
                         <ul>
                             <li>
-                                <a href="">Home</a>
+                                <a href="#home">Home</a>
                             </li>
     
                             <li>
@@ -87,9 +89,11 @@
 
                     <div class="clear"></div>
                 
-                    <div class="btn1-text">
-                        Solicite Contato
-                    </div><!--btn1-text-->
+                    <a href="#contato">
+                        <div class="btn1-text">
+                            Solicite Contato
+                        </div><!--btn1-text-->
+                    </a>
                 </div><!--sessao_1_text-->
 
                 <div class="sessao_1_img"></div><!--sessao_1_img-->
@@ -215,7 +219,7 @@
                     
                     <p>Preencha os campos e aguarde o retorno.</p>
 
-                    <form action="POST">
+                    <form id="form-modal" >
                         <input type="text" required name="nome" placeholder="*Nome">
 
                         <input type="email" required name="email" placeholder="*E-Mail">
@@ -253,10 +257,10 @@
             </div><!--container-->
         </footer>
         
-        <script src="JS/jquery.js"></script>
-        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBw8XII2wq6HkO2lnLxOcQqywT6RNvLUGE"></script>
-        <script type="text/javascript" src="JS/functions.js"></script>
+        <script src="JS/map.js"></script>
         <script src="JS/menuScroll.js"></script>
+        <script src="JS/confirm.js"></script>
+        <script src="JS/menuFixedScroll.js"></script>
         <script src="JS/sliderEquipe.js"></script>
 
         

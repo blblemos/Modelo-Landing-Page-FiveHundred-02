@@ -162,6 +162,10 @@ section.sessao_1{
     top: -50px;
 }
 
+.sessao_1_text a {
+    text-decoration: none;
+}
+
 .btn1-text{
     background-color: rgb(190, 190, 190);
     width: 165px;

@@ -1,5 +1,4 @@
-window.onload = function(){
-
+window.onload = $.getScript("https://maps.googleapis.com/maps/api/js?key=AIzaSyBw8XII2wq6HkO2lnLxOcQqywT6RNvLUGE", function(){
     var map;
 
     function initialize(){
@@ -38,7 +37,7 @@ window.onload = function(){
 
     var conteudo = '<p style="color:black;font-size:13px;padding:10px 0;">Five Hundred</p> <p style="color:black;font-size:10px;padding:10px 0;" >Instituto Federal de Educação, Ciência e Tecnologia da Bahia - Campus Irecê Rodovia BA 148, km 04, n°. 1800 – Bairro Vila Esperança. Irecê / BA-CEP:44900-000.Tel.:  (74) 3688-6701 - 3688-6705</p>';
     addMarker(-11.327264,-41.864126,'',conteudo);
-}
+});
 
 /*$(function(){
     var indiceAtual = 0;

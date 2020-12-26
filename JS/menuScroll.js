@@ -1,5 +1,5 @@
 $(function(){
-    $('nav ul li a').click(function(){
+    $('nav ul li a, .sessao_1_text a').click(function(){
         var href = $(this).attr('href');
         var offSetTop = $(href).offset().top;
 
@@ -12,3 +12,4 @@ $(function(){
         return false;
     })
 })
+
