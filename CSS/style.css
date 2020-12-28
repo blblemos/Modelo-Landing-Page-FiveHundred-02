@@ -47,7 +47,11 @@ header{
     background-size: cover;
 }
 
-header nav.menu-mobile{
+.header-menu {
+    z-index: 5;
+}
+
+header .header-menu nav.menu-mobile{
     cursor: pointer;
     display: none;
     width: 50px;
@@ -77,7 +81,7 @@ nav.menu-mobile ul li{
     padding: 8px 0;
 }
 
-header nav.menu-desktop ul{
+header .header-menu nav.menu-desktop ul{
     float: right;
     background-color: rgba(68, 68, 68, 0.5);
     border-radius: 10px;
@@ -86,17 +90,17 @@ header nav.menu-desktop ul{
     list-style-type: none;
 }
 
-header nav.menu-desktop li{
+header .header-menu nav.menu-desktop li{
     float: left;
     padding: 10px 20px;
 }
 
-header nav.menu-desktop a , nav.menu-mobile a{
+header .header-menu nav.menu-desktop a , nav.menu-mobile a{
     font-family: sans-serif;
     font-size: 18px;
 }
 
-header li a{
+header .header-menu li a{
     color: white;
     text-decoration: none;
     font-weight: bold;
@@ -437,11 +441,16 @@ footer p:nth-last-of-type(2){
         
     }
 
-    header nav.menu-desktop {
+    .header-menu{
+        position:fixed;
+        width: 96%;
+    }
+
+    header .header-menu nav.menu-desktop {
         display: none;
     }
 
-    header nav.menu-mobile{
+    header .header-menu nav.menu-mobile{
         float: right;
         display: block;
     }

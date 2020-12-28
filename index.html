@@ -6,6 +6,7 @@
         <meta charset="utf-8">
         <link href="CSS/style.css" rel="stylesheet" type="text/css"/>
         <link href="CSS/modal.css" rel="stylesheet" type="text/css"/>
+        <link href="CSS/menuFixedScroll.css" rel="stylesheet" type="text/css"/>
         <meta name="description" content=""/>
         <meta name="keywords" content=""/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0" />
@@ -15,11 +16,57 @@
 
     <body>
         <div id="modal"></div>
+        <div id="menuScroll">
+            <div class="wraper-menuScroll">
+                <div class="logo-menu-Scroll"></div>
+                
+                    <nav class="menu-scroll">
+                        <ul>
+                            <li>
+                                <a href="#contato">Contato</a>
+                            </li>
+                            <li>
+                                <a href="#sobre">Sobre</a>
+                            </li>
+                            <li>
+                                <a href="#servicos">Serviços</a>
+                            </li>
+                            <li>
+                                <a href="#home">Home</a>
+                            </li>
+                            
+                        </ul>
+                    </nav>
+                
+            </div>
+        </div>
+        <div class="clear"></div>
         <header>
-            <div class="container" id="home">
-                <div class="logo-1"></div><!--logo-1-->
-
-                <nav class="menu-desktop">
+            <div class="header-menu">
+                <div class="container" id="home">
+                    <div class="logo-1"></div><!--logo-1-->
+    
+                    <nav class="menu-desktop">
+                            <ul>
+                                <li>
+                                    <a href="#home">Home</a>
+                                </li>
+        
+                                <li>
+                                    <a href="#servicos">Serviços</a>
+                                </li>
+        
+                                <li>
+                                    <a href="#sobre">Sobre</a>
+                                </li>
+        
+                                <li>
+                                    <a href="#contato">Contato</a>
+                                </li>
+                            </ul>
+                    </nav><!--menu-desktop-->
+                    
+                    <nav class="menu-mobile">
                         <ul>
                             <li>
                                 <a href="#home">Home</a>
@@ -37,35 +84,15 @@
                                 <a href="#contato">Contato</a>
                             </li>
                         </ul>
-                </nav><!--mdienu-desktop-->
-                
-                <nav class="menu-mobile">
-                    <ul>
-                        <li>
-                            <a href="">Home</a>
-                        </li>
-
-                        <li>
-                            <a href="#servicos">Serviços</a>
-                        </li>
-
-                        <li>
-                            <a href="#sobre">Sobre</a>
-                        </li>
-
-                        <li>
-                            <a href="#contato">Contato</a>
-                        </li>
-                    </ul>
-            </nav><!--menu-mobile-->
-
-                <div class="clear"></div>
-
-                <div class="chamada_1">
-                    <h1>Sistemas On Demand</h1>
-                    <h4>Sistemas únicos para empresas únicas. </h4>
-                </div><!--chamada_1-->
-            </div><!--container-->
+                </nav><!--menu-mobile-->
+    
+                    <div class="clear"></div>
+                </div><!--container-->
+            </div>
+            <div class="chamada_1">
+                <h1>Sistemas On Demand</h1>
+                <h4>Sistemas únicos para empresas únicas. </h4>
+            </div><!--chamada_1-->
         </header>
 
         <section id="servicos" class="sessao_1">
@@ -262,8 +289,6 @@
         <script src="JS/confirm.js"></script>
         <script src="JS/menuFixedScroll.js"></script>
         <script src="JS/sliderEquipe.js"></script>
-
-        
 
     </body>
 

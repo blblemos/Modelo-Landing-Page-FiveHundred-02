@@ -7,7 +7,7 @@ $(function(){
             offSetTop-=40;
         }
 
-        $('html,body').animate({'scrollTop':offSetTop});
+        $('html,body').animate({'scrollTop':offSetTop-50});
 
         return false;
     })

@@ -1,8 +1,8 @@
 
 $(function(){
-    document.getElementById("form-modal").onsubmit = function() {myFunction()};
+    document.getElementById("form-modal").onsubmit = function() {openModal()};
 
-    function myFunction() {
+    function openModal() {
         var html =`
         <div class="modal">
             <div class="div-modal">
