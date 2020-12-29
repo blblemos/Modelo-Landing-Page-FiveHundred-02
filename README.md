@@ -22,6 +22,7 @@ O site é uma landing page responsiva e simples, desenvolvida com objetivo de pr
 
 - HTML;
 - CSS;
+- jQuery;
 - JavaScript. 
 
 O projeto foi feito durante o curso **[Front End Completo - Danki Code]( https://cursos.dankicode.com/curso-front-end-completo)**, porém foi idealizado pensando em uma empresa fictícia chamada [Five Hundred](#-five-hundred). Foram aplicadas diversas melhorias em relação ao projeto inicial como:
