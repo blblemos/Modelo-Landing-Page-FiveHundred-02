@@ -68,6 +68,14 @@ header .header-menu nav.menu-mobile {
   background-size: 100% 100%;
 }
 
+.sessao_1_text ul {
+  list-style-position: inside;
+  font-size: 13px;
+  margin-top: 5px;
+  margin-left: 30px;
+  padding: auto auto;
+}
+
 nav.menu-mobile ul {
   background-color: rgba(68, 68, 68, 0.95);
   text-align: center;
@@ -98,15 +106,20 @@ header .header-menu nav.menu-desktop li {
   padding: 10px 20px;
 }
 
-header .header-menu nav.menu-desktop a, nav.menu-mobile a {
-  font-family: sans-serif;
-  font-size: 18px;
-}
-
 header .header-menu li a {
   color: white;
   text-decoration: none;
   font-weight: bold;
+}
+
+.sessao_1_text a {
+  text-decoration: none;
+}
+
+nav.menu-mobile a,
+header .header-menu nav.menu-desktop a{
+  font-family: sans-serif;
+  font-size: 18px;
 }
 
 .logo-1 {
@@ -151,14 +164,6 @@ section.sessao_1 {
   width: 50%;
 }
 
-.sessao_1_text ul {
-  list-style-position: inside;
-  font-size: 13px;
-  margin-top: 5px;
-  margin-left: 30px;
-  padding: auto auto;
-}
-
 .sessao_1_img {
   float: right;
   width: 50%;
@@ -168,10 +173,6 @@ section.sessao_1 {
   background-size: 100% 100%;
   position: relative;
   top: -50px;
-}
-
-.sessao_1_text a {
-  text-decoration: none;
 }
 
 .btn1-text {
@@ -199,6 +200,18 @@ section.sessao-2 {
   padding: 50px 2% 0 2%;
   color: rgb(190, 190, 190);
   text-align: center;
+}
+
+.parte-1 p {
+  font-style: italic;
+  margin-top: 20px;
+  line-height: 20px;
+  text-align: justify;
+}
+
+.wraper_titulo-autores p {
+  font-size: 12px;
+  margin-left: 5px;
 }
 
 section.sessao-2 p {
@@ -231,14 +244,9 @@ section.sessao-3 {
   padding: 140px 0 90px 0;
   background-color: rgb(190, 190, 190);
 }
+
 .wraper-part-1 h2 {
   margin-left: 0;
-}
-.parte-1 p {
-  font-style: italic;
-  margin-top: 20px;
-  line-height: 20px;
-  text-align: justify;
 }
 
 .wraper-part-1 {
@@ -252,7 +260,6 @@ section.sessao-3 {
   width: 50%;
   padding: 140px 30px 90px 0;
   background-color: white;
-
 }
 
 .scrollEquipe {
@@ -264,7 +271,6 @@ section.sessao-3 {
 .scroll-wraper {
   width: 100%;
   margin-left: 30px;
-    
 }
 
 .autores {
@@ -280,11 +286,6 @@ section.sessao-3 {
 
 .wraper_titulo-autores {
   float: left;
-}
-
-.wraper_titulo-autores p {
-  font-size: 12px;
-  margin-left: 5px;
 }
 
 .titulo-autores h2 {
@@ -371,9 +372,8 @@ input[type=email] {
   height: 44px;
   color: rgb(68, 68, 68);
   cursor: pointer;
-  margin-top: 20px;
   border-radius: 30px;
-  margin: 30px auto;
+  margin: 20px auto 30px auto;
   font-size: 15px;
   font-weight: bold;
   border: 0;
@@ -583,7 +583,7 @@ footer p:nth-last-of-type(2) {
   }
 
   .titulo-autores h2 {
-    padding-right: 0px;
+    padding-right: 0;
     width: 100%;
   }
 
@@ -611,5 +611,5 @@ footer p:nth-last-of-type(2) {
   footer p:nth-last-of-type(2) {
     float: none;
     margin-top: 5px;
-  } 
+  }
 }
