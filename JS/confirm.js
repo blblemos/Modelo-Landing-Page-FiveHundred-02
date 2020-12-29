@@ -1,7 +1,5 @@
 
 $(function(){
-    document.getElementById("form-modal").onsubmit = function() {openModal()};
-
     function openModal() {
         var html =`
         <div class="modal">
@@ -14,10 +12,5 @@ $(function(){
         event.preventDefault();
     }
 
-   /* $('.modal .div-modal a').click(goToHome);
-    function goToHome() {
-            var offSetTop = $("#home").offset().top;
-            $('html,body').animate({'scrollTop':offSetTop});
-    }*/
-
-})
+    document.getElementById("form-modal").onsubmit = function() {openModal()};
+});

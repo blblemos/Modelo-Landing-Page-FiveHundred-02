@@ -7,14 +7,17 @@ window.onload = $.getScript("https://maps.googleapis.com/maps/api/js?key=AIzaSyB
             scrollWheel:false,
             zoom:15,
             MapTypoId:google.maps.MapTypeId.ROADMAP
-        }
+        };
 
         map = new google.maps.Map(document.getElementById("mapa"),mapProp);
 
     }
 
     function addMarker(lat,long,icon,content){
-        var latLng = {'lat':lat,'lng':long};
+        var latLng = {
+            "lat":lat,
+            "lng":long
+        };
 
         var marker = new google.maps.Marker({
             position:latLng,
@@ -27,7 +30,7 @@ window.onload = $.getScript("https://maps.googleapis.com/maps/api/js?key=AIzaSyB
             maxWidth:200,
             pixelOffset: new google.maps.Size(0,20)
         });
-        google.maps.event.addListener(marker, 'click', function(){
+        google.maps.event.addListener(marker, "click", function(){
             infoWindow.open(map,marker);
         });
         
@@ -35,30 +38,8 @@ window.onload = $.getScript("https://maps.googleapis.com/maps/api/js?key=AIzaSyB
 
     initialize();
 
-    var conteudo = '<p style="color:black;font-size:13px;padding:10px 0;">Five Hundred</p> <p style="color:black;font-size:10px;padding:10px 0;" >Instituto Federal de Educação, Ciência e Tecnologia da Bahia - Campus Irecê Rodovia BA 148, km 04, n°. 1800 – Bairro Vila Esperança. Irecê / BA-CEP:44900-000.Tel.:  (74) 3688-6701 - 3688-6705</p>';
+    var conteudo = `<p style="color:black;font-size:13px;padding:10px 0;">Five Hundred</p> <p style="color:black;font-size:10px;padding:10px 0;" >Instituto Federal de Educação, Ciência e Tecnologia da Bahia - Campus Irecê Rodovia BA 148, km 04, n°. 1800 – Bairro Vila Esperança. Irecê / BA-CEP:44900-000.Tel.:  (74) 3688-6701 - 3688-6705</p>`;
     addMarker(-11.327264,-41.864126,'',conteudo);
 });
 
-/*$(function(){
-    var indiceAtual = 0;
-    var indiceMaximo = $('.autores').length;
-    var delay = 5000;
-    initSlider();
-
-    function initSlider(){
-        $('.autores').eq(0).fadeIn();
-        setInterval(function(){
-            alternarSlider()
-        },delay);
-    }
-
-    function alternarSlider(){
-        $('.autores').eq(indiceAtual).fadeOut(2000);
-        indiceAtual+=1;
-        if(indiceAtual == indiceMaximo){
-            indiceAtual = 0;
-        }
-        $('.autores').eq(indiceAtual).fadeIn(3000);
-    }
-});*/
 

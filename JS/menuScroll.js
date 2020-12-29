@@ -1,15 +1,15 @@
 $(function(){
-    $('nav ul li a, .sessao_1_text a').click(function(){
-        var href = $(this).attr('href');
+    $("nav ul li a, .sessao_1_text a").click(function(){
+        var href = $(this).attr("href");
         var offSetTop = $(href).offset().top;
 
-        if(href == '#servicos'){
+        if(href === "#servicos"){
             offSetTop-=40;
         }
 
-        $('html,body').animate({'scrollTop':offSetTop-50});
+        $("html,body").animate({"scrollTop":offSetTop-50});
 
         return false;
-    })
-})
+    });
+});
 

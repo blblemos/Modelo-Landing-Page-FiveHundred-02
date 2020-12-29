@@ -7,14 +7,9 @@ function openMenuMobile(){
         }
 }
 
-function closeMenuMobile() {
-        
-   
-}
-
 $(function() {
-    $('nav.menu-mobile ul li a').click(function() {
+    $("nav.menu-mobile ul li a").click(function() {
         document.getElementById("menuMobile").style.display = "none";
         return false;
-    })
+    });
 });
