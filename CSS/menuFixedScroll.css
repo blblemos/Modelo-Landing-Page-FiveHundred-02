@@ -1,45 +1,45 @@
 #menuScroll {
-    background-color: rgba(68, 68, 68, 0.95);
-    position: fixed;
-    top: -150px;
-    width: 100%;
-    display: block;
-    transition: top 0.3s;
-    z-index: 5;
-  }
+  background-color: rgba(68, 68, 68, 0.95);
+  position: fixed;
+  top: -150px;
+  width: 100%;
+  display: block;
+  transition: top 0.3s;
+  z-index: 5;
+}
 
-  #menuScroll .wraper-menuScroll{
-    max-width: 1280px;
-    margin: 0 auto;
-  }
+#menuScroll .wraper-menuScroll {
+  max-width: 1280px;
+  margin: 0 auto;
+}
 
-  #menuScroll .wraper-menuScroll .logo-menu-Scroll{
-    float: left;
-    height: 50px;
-    width: 150px;
-    background-image: url("../IMG/img-logo.png");
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
-    background-position: center;
-  }
+#menuScroll .wraper-menuScroll .logo-menu-Scroll {
+  float: left;
+  height: 50px;
+  width: 150px;
+  background-image: url("../IMG/img-logo.png");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
 
-  #menuScroll .menu-scroll ul{
-      list-style: none;
-  }
+#menuScroll .menu-scroll ul {
+  list-style: none;
+}
   
-  #menuScroll .menu-scroll ul li a {
-    float: right;
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 15px;
-    text-decoration: none;
-    font-size: 18px;
-    font-weight: bold;
-  }
+#menuScroll .menu-scroll ul li a {
+  float: right;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+}
 
-  @media screen and (max-width: 768px){
-    #menuScroll {
-        display: none;
-    }
+@media screen and (max-width: 768px){
+  #menuScroll {
+    display: none;
   }
+}

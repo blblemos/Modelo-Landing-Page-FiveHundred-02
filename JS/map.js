@@ -6,7 +6,7 @@ window.onload = $.getScript("https://maps.googleapis.com/maps/api/js?key=AIzaSyB
             center: new google.maps.LatLng(-11.327264,-41.864126,),
             scrollWheel:false,
             zoom:15,
-            MapTypoId:google.maps.MapTypeId.ROADMAP
+            MapTypoId:google.maps.MapTypeId.ROADMAP,
         };
 
         map = new google.maps.Map(document.getElementById("mapa"),mapProp);
@@ -16,19 +16,19 @@ window.onload = $.getScript("https://maps.googleapis.com/maps/api/js?key=AIzaSyB
     function addMarker(lat,long,icon,content){
         var latLng = {
             "lat":lat,
-            "lng":long
+            "lng":long,
         };
 
         var marker = new google.maps.Marker({
             position:latLng,
             map:map,
-            icon: icon
+            icon: icon,
         });
 
         var infoWindow = new google.maps.InfoWindow({
             content:content,
             maxWidth:200,
-            pixelOffset: new google.maps.Size(0,20)
+            pixelOffset: new google.maps.Size(0,20),
         });
         google.maps.event.addListener(marker, "click", function(){
             infoWindow.open(map,marker);
