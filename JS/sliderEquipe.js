@@ -56,7 +56,7 @@ $(function(){
         clearInterval(intervalo);
      }, function() {
         autoPlay();
-     }) 
+     });
 
     initSlider();
     autoPlay();
