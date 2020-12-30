@@ -1,4 +1,5 @@
 # Modelo-Landing-Page-FiveHundred-02
+[![Codacy Badge](https://app.codacy.com/project/badge/Grade/67a79c1a279a498583e30e8f2672e8d4)](https://www.codacy.com/gh/blblemos/Modelo-Landing-Page-FiveHundred-02/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=blblemos/Modelo-Landing-Page-FiveHundred-02&amp;utm_campaign=Badge_Grade)
 ---
 ### Web
 ---
