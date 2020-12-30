@@ -8,7 +8,7 @@ $(function(){
                 <p class="text-modal" >Seus dados já estão conosco, entraremos em contato em breve.</p>
             </div>
         </div>`;
-        document.getElementById("modal").innerHTML = html;
+        document.getElementById("modal").innerHTML = (html);
         event.preventDefault();
     }
 
