@@ -10,7 +10,7 @@ $(function(){
         </div>`;
         document.getElementById("modal").innerHTML = (html);
         event.preventDefault();
-    }
+    };
 
     document.getElementById("form-modal").onsubmit = function() {openModal()};
 });

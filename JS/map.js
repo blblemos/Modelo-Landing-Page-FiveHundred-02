@@ -16,13 +16,13 @@ window.onload = $.getScript("https://maps.googleapis.com/maps/api/js?key=AIzaSyB
     function addMarker(lat,long,icon,content){
         var latLng = {
             "lat": lat,
-            "lng": long,
+            "lng": long
         };
 
         var marker = new google.maps.Marker({
             "position": latLng,
             "map": map,
-            "icon": icon,
+            "icon": icon
         });
 
         var infoWindow = new google.maps.InfoWindow({

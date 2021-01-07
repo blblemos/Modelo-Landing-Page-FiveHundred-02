@@ -15,9 +15,9 @@ $(function(){
 
         for( var i = 0; i <amt ;i++){
             if(i === 0){
-                $(".slider-bullets").append('<span style="background-color: rgb(68, 68, 68);"></span>');
+                $(".slider-bullets").append(`<span style="background-color: rgb(68, 68, 68);"></span>`);
             }else{
-                $(".slider-bullets").append('<span></span>');
+                $(".slider-bullets").append("<span></span>");
             }
         }
     }
@@ -40,7 +40,7 @@ $(function(){
     }
 
     $(window).resize(function(){
-        $(".scrollEquipe").stop().animate({'scrollLeft':0});
+        $(".scrollEquipe").stop().animate({"scrollLeft":0});
     });
 
     function go(){
@@ -61,4 +61,4 @@ $(function(){
     initSlider();
     autoPlay();
     go();
-})
+});
